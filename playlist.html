@@ -1,0 +1,213 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist Page</title>
+  <style>
+      p{
+          text-transform: capitalize;
+          margin-top: 60px;
+      }
+   
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+            background-color: aqua;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+    
+  }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .playlist {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .song {
+      background-color: #fff;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .song img {
+      
+            max-width: 50px;
+            max-height: 50px;
+            margin-right: 10px;
+    }
+
+    .song-details {
+      flex-grow: 1;
+    }
+
+    .download-button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer{
+        background: gray;
+        font-size: 20px;
+         margin-top: 50px;
+    }
+    footer ul{
+        
+        margin-top: 50px;
+        display: inline-block;
+    }
+    .home{
+        height: 50px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 20px;
+        background: blue;
+        color: white;
+    }
+    .home:hover{
+        background: gold;
+        box-shadow: 0 0 5px gold, 0 0 20px gold,
+                    0 0 40px gold, 0 0 90px gold;
+    }
+       
+    
+  </style>
+  <header>
+      <h1>Prince willz Music Playlist</h1>
+    <div class="links">
+      <ul>
+          <li><a href="index.html"> Home</a> </li>
+          <li><a href="playlist.html"> Playlist</a> </li>
+          <li><a href="uploaded.html"> upload your music</a> </li>
+          <li><a href="join us.html"> join us</a> </li>
+          <a href="About.html">About Us</a>
+          <li><a href="contact us.html"> Contact us</a> </li>
+      </ul>
+  </div>
+</header>
+  
+</head>
+<body>
+
+  <h2>My Playlist</h1>
+
+  <ul class="playlist">
+    <li class="song">
+      <img src="./img/prince.jpg" alt="Artist 1">
+      <div class="song-details">
+        <h3>Prince Willz - Baby Nah</h3>
+        <audio controls>
+          <source src="Baby_Nah.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <a href="Baby_Nah.mp3" download class="download-btn">
+        <button class="download-button">Download</button>
+     </a> </div>
+    </li>
+    <li class="song">
+      <img src="prince_willz.jpg" alt="Artist 2">
+      <div class="song-details">
+        <h3>Prince Willz - Tombula</h3>
+        <audio controls>
+          <source src="Tombula - Prince Willz.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <button class="download-button">Download</button>
+      </div>
+    </li>
+    <!-- Repeat the above li for each song -->
+    <li class="song">
+      <img src="prince_willz.jpg" alt="Artist 2">
+      <div class="song-details">
+        <h3>Prince Willz ft Doro weiyz - Nzikakane</h3>
+        <audio controls>
+          <source src="Nzikakane - Prince Willz & Doro Weiyz.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <button class="download-button">Download</button>
+      </div>
+    </li>
+    
+    <li class="song">
+      <img src="prince_willz.jpg" alt="Artist 2">
+      <div class="song-details">
+        <h3>Prince willz ft king thunder - Bimpe</h3>
+        <audio controls>
+          <source src="Bimpe - Prince Willz.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <button class="download-button">Download</button>
+      </div>
+    </li>
+    
+    
+    <li class="song">
+      <img src="prince_willz.jpg" alt="Artist 2">
+      <div class="song-details">
+        <h3>Prince willz - Wuliriza</h3>
+        <audio controls>
+          <source src="Wuliriza - Prince Willz.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <button class="download-button">Download</button>
+      </div>
+    </li>
+    
+    
+    <li class="song">
+      <img src="prince_willz.jpg" alt="Artist 2">
+      <div class="song-details">
+        <h3>Prince willz ft Vikmatic - Bitware</h3>
+        <audio controls>
+          <source src="Bitware__Vikmatic_ft_Prince_Willz_Official.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <button class="download-button">Download</button>
+        
+        
+        <li class="song">
+      <img src="prince_willz.jpg" alt="Artist 2">
+      <div class="song-details">
+        <h3>Prince willz ft Abby Rabby- Wooli</h3>
+        <audio controls>
+          <source src="WOOLI_PRINCE_WILLZ_FT_ABY_LABY_2023(OFFICIAL_LYRIC_VIDEO)(360p).mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <button class="download-button">Download</button>
+      </div>
+    </li>
+
+  </ul>
+  <p>keep tuned in for more upcoming releases and updates</br>
+  you can also view, like comment and subscribe to our <a href="www.youtube.com/love texture music">YouTube</a> channel</p>
+  
+  <button class="home"><a href="index.html">back home</a></button>
+
+<footer>
+    <ul>
+        <li><a href="Terms of service.html">Terms of Service</a></li>
+        <li><a href="privacy policy.html">Privacy Policy</a></li>
+    </ul>
+        <p>&copy; 2023 Love Texture Music. All rights reserved.</p>
+    </footer></div>
+</body>
+</html>

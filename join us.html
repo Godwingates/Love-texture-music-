@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Texture Music</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: gold;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .login-link {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Love Texture Music</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="playlist.html">Playlist</a>
+            <a href="hire.html">Hire Us</a>
+            <a href="join us.html">join us</a>
+            <a href="contact us.html">Contact</a>
+        </nav>
+    </header>
+
+    <form id="joinForm">
+        <h2>Join Love Texture Music</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="signUp()">Sign Up</button>
+        <a href="#" class="login-link">Already have an account? Login</a>
+    </form>
+
+    <script>
+        function signUp() {
+            // Add your code to handle form submission and database storage here
+
+            // Assuming successful sign-up, redirect to the playlist page
+            window.location.href = "playlist.html";
+        }
+    </script>
+</body>
+
+</html>
